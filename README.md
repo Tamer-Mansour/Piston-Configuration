@@ -6,9 +6,6 @@
 
 <h3 align="center">A high performance general purpose code execution engine.</h3>
 
-<br>
----
-
 <h4 align="center">
   <a href="https://piston.readthedocs.io">Documentation</a>
 </h4>
