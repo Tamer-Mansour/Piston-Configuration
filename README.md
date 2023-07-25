@@ -148,7 +148,7 @@ services:
         ports:
             - 2000:2000
         volumes:
-            - C:\Devlopment\Forme\MONACO\piston\api:/piston_api/api
+            - `navigate\to\your\piston\directory`\piston\api:/piston_api/api
         tmpfs:
             - /piston/jobs:exec,uid=1000,gid=1000,mode=711
             - /tmp:exec
@@ -223,6 +223,14 @@ app.use(cors({
 }));
 
 ```
+
+```sh
+docker-compose build api
+
+docker-compose up -d
+
+```
+
 
 <br>
  
