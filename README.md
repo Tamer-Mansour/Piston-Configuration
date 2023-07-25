@@ -1,7 +1,4 @@
 <h1 align="center">
-    <a href="https://github.com/engineer-man/piston">
-        <img src="var/docs/images/piston.svg" valign="middle" width="58" height="58" alt="engineer-man piston" />
-    </a>
     <span valign="middle">
         Piston
     </span>
@@ -208,7 +205,8 @@ EXPOSE 2000/tcp
 }
 
 ```
-<br>
+
+
 ```sh
  #Navigate to to api/src/index.js
  #import cors
