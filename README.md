@@ -230,7 +230,14 @@ docker-compose build api
 docker-compose up -d
 
 ```
+<br>
 
+### When we want to run the piston with the backend project we need to delete the docker image and rerun it using this comand
+
+```sh
+docker run --name piston-api --network algolabs-services_algolabsNetwork -p 2000:2000 -v /path/to/piston_data:/piston piston-api
+
+```
 
 <br>
  
