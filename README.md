@@ -234,14 +234,14 @@ docker-compose up -d
 
 ### When we want to run the piston with the backend project we need to do some steps:
 
-# 1. turn off the docker compose
+### 1. turn off the docker compose
 ```sh
 docker-compose down
 
 ```
 <br>
 
-# 2. delete the docker image with name  ``piston_api`` form docker desktop or by command line
+### 2. delete the docker image with name  ``piston_api`` form docker desktop or by command line
 ```sh
 docker rmi piston-api
 
@@ -249,7 +249,7 @@ docker rmi piston-api
 
 <br>
 
-# 3. run build
+### 3. run build
 ```sh
 docker-compose build api
 
@@ -257,7 +257,7 @@ docker-compose build api
 
 <br>
 
-# 4. check the docker networks 
+### 4. check the docker networks 
 ```sh 
 docker network ls
 
@@ -265,7 +265,7 @@ docker network ls
 
 <br>
 
-# 5. check what is in the network
+### 5. check what is in the network
 ```sh
 docker network inspect [network-name]
 
@@ -273,7 +273,7 @@ docker network inspect [network-name]
 
 <br>
 
-# 6. run the docker image into project network
+### 6. run the docker image into project network
 ```sh
 docker run --name piston-api --[project-network-name] -p 2000:2000 -v /path/to/piston_data:/piston piston-api
 
