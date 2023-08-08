@@ -275,7 +275,7 @@ docker network inspect [network-name]
 
 ### 6. run the docker image into project network
 ```sh
-docker run --name piston-api --[project-network-name] -p 2000:2000 -v /path/to/piston_data:/piston piston-api
+docker run --name piston-api --network [project-network-name] -p 2000:2000 -v /path/to/piston_data:/piston piston-api
 
 ```
 
